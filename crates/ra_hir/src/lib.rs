@@ -26,7 +26,6 @@ pub mod source_binder;
 mod ids;
 mod macros;
 mod name;
-mod module_tree;
 mod nameres;
 mod adt;
 mod type_alias;
@@ -55,7 +54,7 @@ pub use self::{
     name::Name,
     ids::{HirFileId, MacroCallId, MacroCallLoc, HirInterner},
     macros::{MacroDef, MacroInput, MacroExpansion},
-    nameres::{ItemMap, PerNs, Namespace},
+    nameres::{PerNs, Namespace},
     ty::{Ty, Substs},
     impl_block::{ImplBlock, ImplItem},
     docs::{Docs, Documentation},
