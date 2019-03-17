@@ -32,7 +32,7 @@ fn complete_fields(acc: &mut Completions, ctx: &CompletionContext, receiver: Ty)
                         }
                     }
 
-                    // TODO unions
+                    // FIXME unions
                     AdtDef::Enum(_) => (),
                 }
             }
